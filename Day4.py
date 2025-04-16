@@ -1,3 +1,4 @@
+# rock, paper and scissor game
 import random
 pedra =    """   _______
 ---'   ____)

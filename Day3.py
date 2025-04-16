@@ -1,3 +1,4 @@
+# total bill calculator
 print("Welcome to Pizza deliveries")
 bill = 0
 size = input("What is the size of ur pizza? S, M or L: ")
