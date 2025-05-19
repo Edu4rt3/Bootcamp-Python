@@ -47,8 +47,3 @@ class CarManager:
         self.car_speed += MOVE_INCREMENT
         if self.car_speed > 20:
             self.car_speed = 20
-
-    def decrease_speed(self):
-        self.car_speed -= MOVE_INCREMENT
-        if self.car_speed < STARTING_MOVE_DISTANCE:
-            self.car_speed = STARTING_MOVE_DISTANCE
