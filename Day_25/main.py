@@ -22,10 +22,7 @@ while game_is_on:
     answer_states = screen.textinput(title="Gues the State", prompt="What's another state's name?r").title()
 
     if answer_states == "Exit":
-        missing_states = []
-        for state in all_states:
-             if state not in guessed_states:
-                missing_states.append(state)
+        missing_states = [state for state in all_states if state not in guessed_states]
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("states_to_learn.csv")
         game_is_on = False
