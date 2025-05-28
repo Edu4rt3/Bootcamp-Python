@@ -11,7 +11,7 @@ parameters = {
     "lat": -19.912998,
     "lon": -43.940933,
     "cnt": 4,
-    "appid": "6181ce81569ac0af6dcff372d1d782dd"
+    "appid": ""
 }
 
 will_rain = False
@@ -27,7 +27,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         body="It's going to rain, bring a umbrella.",
-        from_="+17627698397",
+        from_="+",
         to="+Your number"
     )
     print(message.status)
